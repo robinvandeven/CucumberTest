@@ -3,72 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 16,
-            "value": "#| Large Touch               | TCx Elevate FO colour scheme  | Arial         |"
-          },
-          {
-            "line": 17,
-            "value": "#| Large Touch               | TCx Elevate FO colour scheme  | Open Sans     |"
-          },
-          {
-            "line": 18,
-            "value": "#| Large Touch               | storeMate FO colour scheme    | Arial         |"
-          },
-          {
-            "line": 19,
-            "value": "#| Large Touch               | storeMate FO colour scheme    | Open Sans     |"
-          },
-          {
-            "line": 20,
-            "value": "#| Touch Alphanumeric        | TCx Elevate FO colour scheme  | Arial         |"
-          },
-          {
-            "line": 21,
-            "value": "#| Touch Alphanumeric        | TCx Elevate FO colour scheme  | Open Sans     |"
-          },
-          {
-            "line": 22,
-            "value": "#| Touch Alphanumeric        | storeMate FO colour scheme    | Arial         |"
-          },
-          {
-            "line": 23,
-            "value": "#| Touch Alphanumeric        | storeMate FO colour scheme    | Open Sans     |"
-          },
-          {
-            "line": 24,
-            "value": "#| Touch image presets (4x5)| TCx Elevate FO colour scheme  | Arial         |"
-          },
-          {
-            "line": 25,
-            "value": "#| Touch image presets (4x5)| TCx Elevate FO colour scheme  | Open Sans     |"
-          },
-          {
-            "line": 26,
-            "value": "#| Touch image presets (4x5)| storeMate FO colour scheme    | Arial         |"
-          },
-          {
-            "line": 27,
-            "value": "#| Touch image presets (4x5)| storeMate FO colour scheme    | Open Sans     |"
-          },
-          {
-            "line": 28,
-            "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Arial         |"
-          },
-          {
-            "line": 29,
-            "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Open Sans     |"
-          },
-          {
-            "line": 30,
-            "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Arial         |"
-          },
-          {
-            "line": 31,
-            "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Open Sans     |"
-          }
-        ],
+        "start_timestamp": "2019-05-17T12:32:23.765Z",
         "line": 32,
         "name": "I want to add a keyboard of type Touch image presets (6x7)",
         "description": "",
@@ -78,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11827472000,
+              "duration": 15036352700,
               "status": "passed"
             },
             "line": 5,
@@ -91,22 +26,20 @@
                 "cells": [
                   "Username",
                   "Password"
-                ],
-                "line": 6
+                ]
               },
               {
                 "cells": [
                   "Admin",
                   "Admin"
-                ],
-                "line": 7
+                ]
               }
             ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2476468500,
+              "duration": 2909650200,
               "status": "passed"
             },
             "line": 9,
@@ -118,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 417075300,
+              "duration": 442193200,
               "status": "passed"
             },
             "line": 10,
@@ -130,8 +63,8 @@
           },
           {
             "result": {
-              "duration": 124779876100,
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat bindings.keyBoardLayout.assignRandomPosFunctions(keyBoardLayout.java:418)\r\n\tat bindings.keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(keyBoardLayout.java:259)\r\n\tat ✽.Then the keyboard uses colour scheme TCx Elevate FO colour scheme and font scheme Arial(keyBoardLayout.feature:11)\r\n",
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat bindings.keyBoardLayout.assignRandomPosFunctions(keyBoardLayout.java:422)\r\n\tat bindings.keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(keyBoardLayout.java:261)\r\n\tat ✽.the keyboard uses colour scheme TCx Elevate FO colour scheme and font scheme Arial(file:src/test/resources/keyBoardLayout.feature:11)\r\n",
+              "duration": 27817351900,
               "status": "failed"
             },
             "line": 11,
@@ -149,19 +82,13 @@
               ],
               "location": "keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(String,String,String\u003e\u003e)"
             },
-            "matchedColumns": [
-              0,
-              1,
-              2
-            ],
             "rows": [
               {
                 "cells": [
                   "Touch image presets (6x7)",
                   "TCx Elevate FO colour scheme",
                   "Arial"
-                ],
-                "line": 12
+                ]
               }
             ],
             "keyword": "Then "
@@ -169,7 +96,6 @@
         ],
         "tags": [
           {
-            "line": 1,
             "name": "@run"
           }
         ]
@@ -179,11 +105,15 @@
     "description": "",
     "id": "keyboard-layout-editor",
     "keyword": "Feature",
-    "uri": "keyBoardLayout.feature",
+    "uri": "file:src/test/resources/keyBoardLayout.feature",
     "tags": [
       {
-        "line": 1,
-        "name": "@run"
+        "name": "@run",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       }
     ]
   }

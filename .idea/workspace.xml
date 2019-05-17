@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af2576fc-4e8c-4a8c-a102-0bc3447b50e3" name="Default Changelist" comment="Changes made on 16-05-2019 09:14">
+    <list default="true" id="af2576fc-4e8c-4a8c-a102-0bc3447b50e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/formatter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bindings/keyBoardLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bindings/keyBoardLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/keyBoardLayout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/keyBoardLayout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="14" selection-start-column="7" selection-end-line="27" />
+            <state relative-caret-position="-255">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -37,8 +40,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="153">
+              <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
+            <state relative-caret-position="61">
+              <caret line="416" column="9" lean-forward="true" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="187">
+              <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state relative-caret-position="210">
+              <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,6 +108,8 @@
       <find>wina</find>
       <find>quit</find>
       <find>Thread</find>
+      <find>&quot;//*[</find>
+      <find>//*</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,9 +153,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/runners/myRunner.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Test2.feature" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/Test3.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Test3.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/scheduleMaintenance.feature" />
@@ -147,11 +162,13 @@
         <option value="$PROJECT_DIR$/src/test/java/bindings/Driver.java" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/webDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/Test2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/test3.java" />
         <option value="$PROJECT_DIR$/src/test/resources/test3.feature" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java" />
         <option value="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runners/myRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" />
       </list>
     </option>
@@ -180,6 +197,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Test2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Test2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -197,7 +219,55 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bindings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -336,38 +406,45 @@
       <option name="project" value="LOCAL" />
       <updated>1556783572315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes made on 17-05-2019 10:45">
+      <created>1558082737281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558082737281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="myRunner - 2019.05.17 at 09h 53m 29s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 13h 49m 35s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 09h 57m 13s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 13h 54m 59s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 09h 58m 32s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 02m 05s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 03m 44s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 08m 58s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 12m 14s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 15m 31s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 17m 26s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 22m 46s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 19m 25s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 24m 58s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 34m 39s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 27m 20s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 36m 41s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 28m 53s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 10h 42m 24s.xml">
+    <history-entry file="myRunner - 2019.05.17 at 14h 33m 10s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -382,15 +459,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49867725" weight="0.2769923" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49867725" visible="true" weight="0.2769923" />
       <window_info id="Structure" order="6" sideWeight="0.50132275" side_tool="true" weight="0.27706185" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.44730076" side_tool="true" visible="true" weight="0.49583334" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.44730076" side_tool="true" weight="0.49583334" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.527635" weight="0.3263889" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49871466" weight="0.32916668" />
@@ -451,7 +529,8 @@
     <MESSAGE value="Changes made on 30-04-2019" />
     <MESSAGE value="Changes made on 02-05-2019" />
     <MESSAGE value="Changes made on 16-05-2019 09:14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes made on 16-05-2019 09:14" />
+    <MESSAGE value="Changes made on 17-05-2019 10:45" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made on 17-05-2019 10:45" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -526,16 +605,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/scheduleMaintenance.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/webewb.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/webDriver.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0-sources.jar!/org/openqa/selenium/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -597,42 +666,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="14" selection-start-column="7" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-255">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
+        <state relative-caret-position="61">
+          <caret line="416" column="9" lean-forward="true" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

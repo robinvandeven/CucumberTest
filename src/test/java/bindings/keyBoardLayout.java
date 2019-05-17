@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -21,6 +22,7 @@ public class keyBoardLayout {
     WebDriver driver = initializeDriver.driver;
     List<WebElement> menuKeys = new ArrayList<>();
     int posMenuCounter = 1;
+
 
 
 
@@ -90,7 +92,7 @@ public class keyBoardLayout {
 
         findKeyboard(arg3);
 
-        assignRandomColourAndTextSize();
+        assignRandomColourAndTextSize(arg3);
 
         findKeyboard(arg3);
 
@@ -114,7 +116,7 @@ public class keyBoardLayout {
                             menuKeys.add(driver.findElement(By.id("Keypad_6e0b7b07-ce09-4455-908c-38e8b3a4fcd2_btn_" + l)));
                         }
 //                  Loop through the list, and assign random POS functions to them
-                        assignRandomPosFunctions();
+                        assignRandomPosFunctions(arg3);
 
 
 //                   Switch to "NUMERIC KEYS" tab, assign random POS functions to all KEYS
@@ -127,7 +129,7 @@ public class keyBoardLayout {
                                 menuKeys.add(driver.findElement(By.id("Keypad_0441a249-2a04-4bb1-b56d-ab64790388bc_btn_" + i)));
                             }
 //                  Loop through the list, and assign random POS functions to them
-                            assignRandomPosFunctions();
+                            assignRandomPosFunctions(arg3);
                         }
 
 
@@ -141,7 +143,7 @@ public class keyBoardLayout {
                                 menuKeys.add(driver.findElement(By.id("Keypad_fafe9644-ed2d-45b0-8913-a6bd117779e1_btn_" + i)));
                             }
 //                  Loop through the list, and assign random POS functions to them
-                            assignRandomPosFunctions();
+                            assignRandomPosFunctions(arg3);
                         }
 
 
@@ -155,7 +157,7 @@ public class keyBoardLayout {
                                 menuKeys.add(driver.findElement(By.id("Keypad_86d216bc-b3b8-4774-b59d-658bf06f03ad_btn_" + i)));
                             }
 //                  Loop through the list, and assign random POS functions to them
-                            assignRandomPosFunctions();
+                            assignRandomPosFunctions(arg3);
                         }
 
 
@@ -169,7 +171,7 @@ public class keyBoardLayout {
                                 menuKeys.add(driver.findElement(By.id("Keypad_736a7cc5-2b7a-4718-b93c-c46858539d61_btn_" + i)));
                             }
 //                  Loop through the list, and assign random POS functions to them
-                            assignRandomPosFunctions();
+                            assignRandomPosFunctions(arg3);
                         }
 
 
@@ -183,7 +185,7 @@ public class keyBoardLayout {
                                 menuKeys.add(driver.findElement(By.id("Keypad_efcba9ca-2304-470d-9265-eaaa37f14036_btn_" + i)));
                             }
 //                  Loop through the list, and assign random POS functions to them
-                            assignRandomPosFunctions();
+                            assignRandomPosFunctions(arg3);
                             save();
                             swithToOverview();
                             break;
@@ -201,7 +203,7 @@ public class keyBoardLayout {
                             menuKeys.add(driver.findElement(By.id("Keypad_58f8e6b4-119d-47b5-b6f0-c0e39535c98e_btn_" + i)));
                         }
 //                      Loop through the list, and assign random POS functions to them
-                        assignRandomPosFunctions();
+                        assignRandomPosFunctions(arg3);
                         save();
                         swithToOverview();
                         break;
@@ -220,7 +222,7 @@ public class keyBoardLayout {
                             menuKeys.add(driver.findElement(By.id("Keypad_3b089254-52f1-4543-bbe0-3e8a7b470b13_btn_" + i)));
                         }
 //                      Loop through the list, and assign random POS functions to them
-                        assignRandomPosFunctions();
+                        assignRandomPosFunctions(arg3);
                         save();
                         swithToOverview();
                         break;
@@ -238,7 +240,7 @@ public class keyBoardLayout {
                             menuKeys.add(driver.findElement(By.id("Keypad_d2221380-a1f4-49d1-91ee-4e6b3fce0db3_btn_" + i)));
                         }
 //              Loop through the list, and assign random POS functions to them
-                        assignRandomPosFunctions();
+                        assignRandomPosFunctions(arg3);
                         save();
                         swithToOverview();
                         break;
@@ -256,7 +258,7 @@ public class keyBoardLayout {
                             menuKeys.add(driver.findElement(By.id("Keypad_9d0cd58c-bed0-4516-81c5-5ddc5556a4b5_btn_" + i)));
                         }
 //                       Loop through the list, and assign random POS functions to them
-                        assignRandomPosFunctions();
+                        assignRandomPosFunctions(arg3);
                         save();
                         swithToOverview();
                         break;
@@ -343,7 +345,7 @@ public class keyBoardLayout {
 
 
 
-    public void assignRandomPosFunctions(){
+    public void assignRandomPosFunctions(List<List<String>> arg3){
         try {
         for(int i=0; i<menuKeys.size(); i++) {
             Thread.sleep(sleepTime);
@@ -406,7 +408,9 @@ public class keyBoardLayout {
             driver.findElement(By.name("SelectedButton.Description0")).sendKeys(posFunctionText);
             driver.switchTo().parentFrame();
 
-
+            if(arg3.get(0).get(0).contains("image") || arg3.get(0).get(0).contains("Image")){
+//                selectImage();
+            }
 
 //          Click on the "ok" button
             driver.findElement(By.xpath("//*[@id=\"EditDialog\"]/div[2]/div[2]/span[1]")).click();
@@ -484,6 +488,7 @@ public class keyBoardLayout {
 
 
 
+
         } catch (Exception e) {
             e.printStackTrace();
             Assert.fail();
@@ -517,7 +522,7 @@ public class keyBoardLayout {
           for (int j=0; j<cells.size(); j++){
               System.out.println(cells.get(j).getText());
 
-              if (cells.get(j).getText().contains("AutoTest")) {
+              if (cells.get(j).getText().equals(arg3.get(0).get(0))) {
 //                   when the created keyboard type is found, it is selected
                     implicitWait();
                     cells.get(j).click();
@@ -543,7 +548,7 @@ public class keyBoardLayout {
 
 
 
-    public void assignRandomColourAndTextSize() {
+    public void assignRandomColourAndTextSize(List<List<String>> arg3) {
         try {
 //          Click on the arrow of the "Default colour" dropdown list
             Thread.sleep(sleepTime);
@@ -562,13 +567,36 @@ public class keyBoardLayout {
             Assert.assertTrue(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div")).isDisplayed());
 //          Store all text sizes in a List
             List<WebElement> textSizes = new ArrayList<>();
-            for (int l = 2; l < 6; l++) {
-                textSizes.add(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div > div:nth-child(" + l + ")")));
+            for (int i = 2; i < 6; i++) {
+                textSizes.add(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div > div:nth-child(" + i + ")")));
             }
             Random textSize = new Random();
             implicitWait();
 //          Select a random text size
             textSizes.get(textSize.nextInt(textSizes.size())).click();
+
+
+//            if(arg3.get(0).get(0).contains("image") || arg3.get(0).get(0).contains("Image")){
+////              Click on the arrow of the "Default image location" dropdown list
+//                explicitWait("xpath", "/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[2]/div[13]/div[2]/div/div[1]");
+//                driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[2]/div[13]/div[2]/div/div[1]")).click();
+//                explicitWait("cssSelector", "div.dijitPopup.dijitComboBoxMenuPopup > div");
+////              Store all possible image locations in a List
+//                List<WebElement> imageLocations = new ArrayList<>();
+//                for(int i = 2; i < 6; i++){
+//                    imageLocations.add(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div > div:nth-child(" + i + ")")));
+//                }
+//                Random imageLocation = new Random();
+//                implicitWait();
+////              Select a random image positionADTERIS
+//                System.out.println("imageLocation.size() = " + imageLocations.size());
+//                WebDriverWait wait = new WebDriverWait(driver, 20, 20);
+//                wait.until(ExpectedConditions.visibilityOf(imageLocations.get(0)));
+//
+//                imageLocations.get(imageLocation.nextInt(imageLocations.size())).click();
+//            }
+
+
 
 //          Click the "save" button
             save();
@@ -578,4 +606,36 @@ public class keyBoardLayout {
             Assert.fail();
         }
     }
-}
+
+
+//    public void selectImage() throws Exception{
+////      Create and initialize Winiumdriver;
+//
+////      Click the "Browse..." button
+////        explicitWait("cssSelector", "div#tijit\\2f layout\\2f layoutview_column_15 div:nth-child(2)");
+//
+//        WebDriverWait wait = new WebDriverWait(driver, 20, 20 );
+//        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("buttonImage_4eb02ef7-e644-4815-9cac-fc9f5c3f804b"))));
+////        //*[contains(text(), 'Image')]
+////        "//*[contains(text(),'"+ arg3.get(0).get(0) + "')]"
+//
+//
+//        driver.findElement(By.cssSelector("div#tijit\\2f layout\\2f layoutview_column_15 div:nth-child(2)")).click();
+//        Thread.sleep(sleepTime);
+//        initializeDriver.winiumDriver.findElement(By.name("File name")).sendKeys("C:\\Users\\robven\\Pictures\\test.png");
+//        initializeDriver.winiumDriver.findElement(By.name("Open")).click();
+//        }
+
+
+
+
+
+
+
+
+//
+
+
+
+
+    }
