@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-05-17T12:32:23.765Z",
+        "start_timestamp": "2019-05-17T13:24:05.576Z",
         "line": 32,
         "name": "I want to add a keyboard of type Touch image presets (6x7)",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15036352700,
+              "duration": 13646218800,
               "status": "passed"
             },
             "line": 5,
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 2909650200,
+              "duration": 2086589000,
               "status": "passed"
             },
             "line": 9,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 442193200,
+              "duration": 454037700,
               "status": "passed"
             },
             "line": 10,
@@ -64,7 +64,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat bindings.keyBoardLayout.assignRandomPosFunctions(keyBoardLayout.java:422)\r\n\tat bindings.keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(keyBoardLayout.java:261)\r\n\tat ✽.the keyboard uses colour scheme TCx Elevate FO colour scheme and font scheme Arial(file:src/test/resources/keyBoardLayout.feature:11)\r\n",
-              "duration": 27817351900,
+              "duration": 80619982300,
               "status": "failed"
             },
             "line": 11,

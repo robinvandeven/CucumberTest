@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2576fc-4e8c-4a8c-a102-0bc3447b50e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/formatter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="416" column="9" lean-forward="true" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
+            <state relative-caret-position="112">
+              <caret line="527" column="41" lean-forward="true" selection-start-line="527" selection-start-column="41" selection-end-line="527" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,7 +200,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="200" />
     <option name="y" value="107" />
     <option name="width" value="1200" />
@@ -417,9 +409,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="myRunner - 2019.05.17 at 13h 49m 35s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="myRunner - 2019.05.17 at 13h 54m 59s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
@@ -447,6 +436,9 @@
     <history-entry file="myRunner - 2019.05.17 at 14h 33m 10s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="myRunner - 2019.05.17 at 15h 25m 43s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,7 +450,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
@@ -710,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="416" column="9" lean-forward="true" selection-start-line="416" selection-start-column="9" selection-end-line="416" selection-end-column="9" />
+        <state relative-caret-position="112">
+          <caret line="527" column="41" lean-forward="true" selection-start-line="527" selection-start-column="41" selection-end-line="527" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
