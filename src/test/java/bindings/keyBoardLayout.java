@@ -10,10 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +21,8 @@ public class keyBoardLayout {
     WebDriver driver = initializeDriver.driver;
     List<WebElement> menuKeys = new ArrayList<>();
     int posMenuCounter = 1;
+
+
 
 
 
@@ -94,165 +94,211 @@ public class keyBoardLayout {
 
         findKeyboard(arg3);
 
-
-
-        try{
+        try {
 
 //          Click the "Edit layout" button
             Thread.sleep(sleepTime);
             driver.findElement(By.id("editLayoutBtn")).click();
 
 
-
-            if ((arg3.get(0).get(0)).equals("Large Touch")) {
-//          Currently on the "MENU KEYS" tab, wanting to assign random POS functions to all KEYS
-//          Store the menu keys in a List
-                for (int l = 0; l < 8; l++) {
-                    menuKeys.add(driver.findElement(By.id("Keypad_6e0b7b07-ce09-4455-908c-38e8b3a4fcd2_btn_" + l)));
-                }
-//              Loop through the list, and assign random POS functions to them
-                assignRandomPosFunction();
+            switch (arg3.get(0).get(0)) {
 
 
-//           Switch to "NUMERIC KEYS" tab, assign random POS functions to all KEYS
-                Thread.sleep(sleepTime);
-                driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab1")).click();
-                {
-//              Store the menu keys in a List, after clearing the List
-                    menuKeys.clear();
-                    for (int i = 0; i < 16; i++) {
-                        menuKeys.add(driver.findElement(By.id("Keypad_0441a249-2a04-4bb1-b56d-ab64790388bc_btn_" + i)));
+
+                case "Large Touch":
+
+//                  Currently on the "MENU KEYS" tab, wanting to assign random POS functions to all KEYS
+//                  Store the menu keys in a List
+                    try {
+                        for (int l = 0; l < 8; l++) {
+                            menuKeys.add(driver.findElement(By.id("Keypad_6e0b7b07-ce09-4455-908c-38e8b3a4fcd2_btn_" + l)));
+                        }
+//                  Loop through the list, and assign random POS functions to them
+                        assignRandomPosFunctions();
+
+
+//                   Switch to "NUMERIC KEYS" tab, assign random POS functions to all KEYS
+                        Thread.sleep(sleepTime);
+                        driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab1")).click();
+                        {
+//                  Store the menu keys in a List, after clearing the List
+                            menuKeys.clear();
+                            for (int i = 0; i < 16; i++) {
+                                menuKeys.add(driver.findElement(By.id("Keypad_0441a249-2a04-4bb1-b56d-ab64790388bc_btn_" + i)));
+                            }
+//                  Loop through the list, and assign random POS functions to them
+                            assignRandomPosFunctions();
+                        }
+
+
+//                  Switch to "Transaction" tab, assign random POS functions to all KEYS
+                        explicitWait("name", "keyboardTabControl_tablist_KeyPadTab2");
+                        driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab2")).click();
+                        {
+//                  Store the menu keys in a List, after clearing the List
+                            menuKeys.clear();
+                            for (int i = 0; i < 24; i++) {
+                                menuKeys.add(driver.findElement(By.id("Keypad_fafe9644-ed2d-45b0-8913-a6bd117779e1_btn_" + i)));
+                            }
+//                  Loop through the list, and assign random POS functions to them
+                            assignRandomPosFunctions();
+                        }
+
+
+//                  Switch to "Registration" tab, assign random POS functions to all KEYS
+                        explicitWait("name", "keyboardTabControl_tablist_KeyPadTab3");
+                        driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab3")).click();
+                        {
+//                  Store the menu keys in a List, after clearing the List
+                            menuKeys.clear();
+                            for (int i = 0; i < 24; i++) {
+                                menuKeys.add(driver.findElement(By.id("Keypad_86d216bc-b3b8-4774-b59d-658bf06f03ad_btn_" + i)));
+                            }
+//                  Loop through the list, and assign random POS functions to them
+                            assignRandomPosFunctions();
+                        }
+
+
+//                  Switch to "Payment" tab, assign random POS functions to all KEYS
+                        explicitWait("nanme", "keyboardTabControl_tablist_KeyPadTab4");
+                        driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab4")).click();
+                        {
+//                  Store the menu keys in a List, after clearing the List
+                            menuKeys.clear();
+                            for (int i = 0; i < 24; i++) {
+                                menuKeys.add(driver.findElement(By.id("Keypad_736a7cc5-2b7a-4718-b93c-c46858539d61_btn_" + i)));
+                            }
+//                  Loop through the list, and assign random POS functions to them
+                            assignRandomPosFunctions();
+                        }
+
+
+//                  Switch to "Extra" tab, assign random POS functions to all KEYS
+                        explicitWait("name", "keyboardTabControl_tablist_KeyPadTab5");
+                        driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab5")).click();
+                        {
+//                  Store the menu keys in a List, after clearing the List
+                            menuKeys.clear();
+                            for (int i = 0; i < 24; i++) {
+                                menuKeys.add(driver.findElement(By.id("Keypad_efcba9ca-2304-470d-9265-eaaa37f14036_btn_" + i)));
+                            }
+//                  Loop through the list, and assign random POS functions to them
+                            assignRandomPosFunctions();
+                            save();
+                            swithToOverview();
+                            break;
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-//              Loop through the list, and assign random POS functions to them
-                    assignRandomPosFunction();
-
-                }
 
 
-//              Switch to "Transaction" tab, assign random POS functions to all KEYS
-                explicitWait("name", "keyboardTabControl_tablist_KeyPadTab2");
-                driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab2")).click();
-                {
-//              Store the menu keys in a List, after clearing the List
-                    menuKeys.clear();
-                    for (int i = 0; i < 24; i++) {
-                        menuKeys.add(driver.findElement(By.id("Keypad_fafe9644-ed2d-45b0-8913-a6bd117779e1_btn_" + i)));
+
+                case "Touch Alphanumeric":
+                    try{
+//                      Store the menu keys in a List
+                        for (int i = 0; i < 43; i++) {
+                            menuKeys.add(driver.findElement(By.id("Keypad_58f8e6b4-119d-47b5-b6f0-c0e39535c98e_btn_" + i)));
+                        }
+//                      Loop through the list, and assign random POS functions to them
+                        assignRandomPosFunctions();
+                        save();
+                        swithToOverview();
+                        break;
+
                     }
-//              Loop through the list, and assign random POS functions to them
-                    assignRandomPosFunction();
-                }
-
-
-//              Switch to "Registration" tab, assign random POS functions to all KEYS
-                explicitWait("name", "keyboardTabControl_tablist_KeyPadTab3");
-                driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab3")).click();
-                {
-//              Store the menu keys in a List, after clearing the List
-                    menuKeys.clear();
-                    for (int i = 0; i < 24; i++) {
-                        menuKeys.add(driver.findElement(By.id("Keypad_86d216bc-b3b8-4774-b59d-658bf06f03ad_btn_" + i)));
+                    catch (Exception e){
+                        e.printStackTrace();
                     }
-//              Loop through the list, and assign random POS functions to them
-                    assignRandomPosFunction();
-                }
 
 
-//            Switch to "Payment" tab, assign random POS functions to all KEYS
-                explicitWait("nanme", "keyboardTabControl_tablist_KeyPadTab4");
-                driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab4")).click();
-                {
-//              Store the menu keys in a List, after clearing the List
-                    menuKeys.clear();
-                    for (int i = 0; i < 24; i++) {
-                        menuKeys.add(driver.findElement(By.id("Keypad_736a7cc5-2b7a-4718-b93c-c46858539d61_btn_" + i)));
+
+                case "Touch image presets (4x5)":
+                    try{
+//                      Store the menu keys in a List
+                        for (int i = 0; i < 19; i++) {
+                            menuKeys.add(driver.findElement(By.id("Keypad_3b089254-52f1-4543-bbe0-3e8a7b470b13_btn_" + i)));
+                        }
+//                      Loop through the list, and assign random POS functions to them
+                        assignRandomPosFunctions();
+                        save();
+                        swithToOverview();
+                        break;
                     }
-//              Loop through the list, and assign random POS functions to them
-                    assignRandomPosFunction();
-                }
-
-
-//          Switch to "Extra" tab, assign random POS functions to all KEYS
-                explicitWait("name", "keyboardTabControl_tablist_KeyPadTab5");
-                driver.findElement(By.name("keyboardTabControl_tablist_KeyPadTab5")).click();
-                {
-//              Store the menu keys in a List, after clearing the List
-                    menuKeys.clear();
-                    for (int i = 0; i < 24; i++) {
-                        menuKeys.add(driver.findElement(By.id("Keypad_efcba9ca-2304-470d-9265-eaaa37f14036_btn_" + i)));
+                    catch (Exception e){
+                        e.printStackTrace();
                     }
+
+
+
+                case "Touch image presets (5x6)":
+                    try {
+//                      Store the menu keys in a List
+                        for (int i = 0; i < 29; i++) {
+                            menuKeys.add(driver.findElement(By.id("Keypad_d2221380-a1f4-49d1-91ee-4e6b3fce0db3_btn_" + i)));
+                        }
 //              Loop through the list, and assign random POS functions to them
-                    assignRandomPosFunction();
-                }
+                        assignRandomPosFunctions();
+                        save();
+                        swithToOverview();
+                        break;
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                    }
+
+
+
+                case "Touch image presets (6x7)":
+                    try{
+//                      Store the menu keys in a List
+                        for (int i = 0; i < 41; i++) {
+                            menuKeys.add(driver.findElement(By.id("Keypad_9d0cd58c-bed0-4516-81c5-5ddc5556a4b5_btn_" + i)));
+                        }
+//                       Loop through the list, and assign random POS functions to them
+                        assignRandomPosFunctions();
+                        save();
+                        swithToOverview();
+                        break;
+
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                    }
+
+                    default:
+                        Assert.fail();
+
+
             }
-
-
-
-
-
-            else if((arg3.get(0).get(0)).equals("Touch Alphanumeric")){
-//              Store the menu keys in a List
-                for (int i = 0; i < 43; i++) {
-                    menuKeys.add(driver.findElement(By.id("Keypad_58f8e6b4-119d-47b5-b6f0-c0e39535c98e_btn_" + i)));
-                }
-//              Loop through the list, and assign random POS functions to them
-                assignRandomPosFunction();
-            }
-
-            else if((arg3.get(0).get(0)).equals("Touch Imgage Presets (4x5)")){
-//              Store the menu keys in a List
-                for (int i = 0; i < 19; i++) {
-                    menuKeys.add(driver.findElement(By.id("Keypad_3b089254-52f1-4543-bbe0-3e8a7b470b13_btn_" + i)));
-                }
-//              Loop through the list, and assign random POS functions to them
-                assignRandomPosFunction();
-            }
-
-            else if((arg3.get(0).get(0)).equals("Touch Imgage Presets (5x6)")){
-//              Store the menu keys in a List
-                for (int i = 0; i < 29; i++) {
-                    menuKeys.add(driver.findElement(By.id("Keypad_d2221380-a1f4-49d1-91ee-4e6b3fce0db3_btn_" + i)));
-
-                }
-//              Loop through the list, and assign random POS functions to them
-                assignRandomPosFunction();
-            }
-
-            else if((arg3.get(0).get(0)).equals("Touch Imgage Presets (6x7)")){
-//              Store the menu keys in a List
-                for (int l = 0; l < 41; l++) {
-                    menuKeys.add(driver.findElement(By.id("Keypad_9d0cd58c-bed0-4516-81c5-5ddc5556a4b5_btn_" + l)));
-                }
-//              Loop through the list, and assign random POS functions to them
-                assignRandomPosFunction();
-            }
-
-
-
-//          Select "Save" button
-            driver.findElement(By.id("saveButton")).click();
-
-
-//          Select "Overview" button
-            explicitWait("id", "overview");
-            driver.findElement(By.id("overview")).click();
-            driver.close();
-
-
-
         }
-        catch (NoSuchElementException e){
-            e.printStackTrace();
-            Assert.assertTrue(true);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+        catch (Exception e) {
+        e.printStackTrace();
+        Assert.fail();
+    }
 
     }
 
 
 
+//    Methods
 
+
+
+
+    public void swithToOverview(){
+//      Select "Overview" button
+        explicitWait("id", "overview");
+        driver.findElement(By.id("overview")).click();
+        driver.close();
+    }
+
+
+    public void save(){
+//       Select "Save" button
+        explicitWait("id", "SaveBtn");
+        driver.findElement(By.id("SaveBtn")).click();
+    }
 
 
     public void implicitWait(){
@@ -297,25 +343,12 @@ public class keyBoardLayout {
 
 
 
-    public List<WebElement> posFunctions(){
-//        Store all possible POS functions in a List
-        List<WebElement> posFunctions = new ArrayList<>();
-        for (int i = 2; i< 122; i++) {
-            posFunctions.add(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div > div:nth-child(" + i + ")")));
-        }
-        return  posFunctions;
-    }
-
-
-
-
-
-
-    public void assignRandomPosFunction(){
+    public void assignRandomPosFunctions(){
         try {
         for(int i=0; i<menuKeys.size(); i++) {
             Thread.sleep(sleepTime);
             menuKeys.get(i).click();
+
 //          Click "Edit" field inside menu key
             menuKeys.get(i).findElement(By.xpath("/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[3]/div[" + posMenuCounter + "]/div/div/div/div[" + (i + 1) + "]/div[4]")).click();
 
@@ -327,11 +360,14 @@ public class keyBoardLayout {
 
 
             driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div/div[2]/div/div[1]/input")).click();
-
+            List<WebElement> posFunctions = new ArrayList<>();
+            for (int j = 2; j< 122; j++) {
+                posFunctions.add(driver.findElement(By.cssSelector("div.dijitPopup.dijitComboBoxMenuPopup > div > div:nth-child(" + j + ")")));
+            }
 
             Random posFunction = new Random();
 //          Select a random POS function from that List
-            WebElement selectedPosfunction = posFunctions().get(posFunction.nextInt(posFunctions().size()));
+            WebElement selectedPosfunction = posFunctions.get(posFunction.nextInt(posFunctions.size()));
 //          Store the Text of the POS function in a String
             String posFunctionText = selectedPosfunction.getText();
             selectedPosfunction.click();
@@ -403,9 +439,6 @@ public class keyBoardLayout {
             explicitWait("xpath", "/html/body/div[1]/div/form/div/div/div[5]/div[2]/div/div[1]/input");
             driver.findElement(By.xpath("/html/body/div[1]/div/form/div/div/div[5]/div[2]/div/div[1]/input")).click();
             driver.switchTo().activeElement();
-
-//*[@id="NewKeyboard_KeyboardLayoutId_ddfdbd5f-8222-4340-add8-09b1f27a7037_popup0"]
-
 //          Select the keyboard type defined in the scenario
             implicitWait();
             driver.findElement(By.xpath("//*[contains(text(),'"+ arg3.get(0).get(0) + "')]")).click();
@@ -512,7 +545,6 @@ public class keyBoardLayout {
 
     public void assignRandomColourAndTextSize() {
         try {
-
 //          Click on the arrow of the "Default colour" dropdown list
             Thread.sleep(sleepTime);
             driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[2]/div[11]/div[2]/span/span/span/span[3]")).click();
@@ -523,8 +555,6 @@ public class keyBoardLayout {
             Random colour = new Random();
 //          Select a random colour
             colours.get(colour.nextInt(colours.size())).click();
-
-
 //          Click on the arrow of the "Default text size" dropdown list
             explicitWait("xpath", "/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[2]/div[12]/div[2]/div/div[1]");
             driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/form/div[3]/div/div[3]/div/div[2]/div[12]/div[2]/div/div[1]")).click();
@@ -540,23 +570,12 @@ public class keyBoardLayout {
 //          Select a random text size
             textSizes.get(textSize.nextInt(textSizes.size())).click();
 
-
-            explicitWait("id", "SaveBtn");
 //          Click the "save" button
-            driver.findElement(By.id("SaveBtn")).click();
-//          Store the table cells on the POS KEYBOARD MAINTENANCE homepage in a List of WebElements again
+            save();
         }
         catch (Exception e){
             e.printStackTrace();
             Assert.fail();
         }
-
-
-
-
     }
-
-
-
-
 }

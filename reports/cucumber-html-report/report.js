@@ -130,14 +130,30 @@ formatter.examples({
         {
           "line": 27,
           "value": "#| Touch image presets (4x5)| storeMate FO colour scheme    | Open Sans     |"
+        },
+        {
+          "line": 28,
+          "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Arial         |"
+        },
+        {
+          "line": 29,
+          "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Open Sans     |"
+        },
+        {
+          "line": 30,
+          "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Arial         |"
+        },
+        {
+          "line": 31,
+          "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Open Sans     |"
         }
       ],
       "cells": [
-        "Touch image presets (5x6)",
+        "Touch image presets (6x7)",
         "TCx Elevate FO colour scheme",
         "Arial"
       ],
-      "line": 28,
+      "line": 32,
       "id": "keyboard-layout-editor;i-want-to-add-a-keyboard-of-type-\u003ckeyboard-type\u003e;;2"
     }
   ],
@@ -192,10 +208,26 @@ formatter.scenario({
     {
       "line": 27,
       "value": "#| Touch image presets (4x5)| storeMate FO colour scheme    | Open Sans     |"
+    },
+    {
+      "line": 28,
+      "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Arial         |"
+    },
+    {
+      "line": 29,
+      "value": "#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Open Sans     |"
+    },
+    {
+      "line": 30,
+      "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Arial         |"
+    },
+    {
+      "line": 31,
+      "value": "#| Touch image presets (5x6)| storeMate FO colour scheme    | Open Sans     |"
     }
   ],
-  "line": 28,
-  "name": "I want to add a keyboard of type Touch image presets (5x6)",
+  "line": 32,
+  "name": "I want to add a keyboard of type Touch image presets (6x7)",
   "description": "",
   "id": "keyboard-layout-editor;i-want-to-add-a-keyboard-of-type-\u003ckeyboard-type\u003e;;2",
   "type": "scenario",
@@ -249,7 +281,7 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "Touch image presets (5x6)",
+        "Touch image presets (6x7)",
         "TCx Elevate FO colour scheme",
         "Arial"
       ],
@@ -262,21 +294,21 @@ formatter.match({
   "location": "keyBoardLayout.i_log_in_on_the_central_storeMate_Online_environment(String\u003e\u003e)"
 });
 formatter.result({
-  "duration": 13785809800,
+  "duration": 11827472000,
   "status": "passed"
 });
 formatter.match({
   "location": "keyBoardLayout.i_navigate_to_POS_Keyboard_maintenance()"
 });
 formatter.result({
-  "duration": 2206129600,
+  "duration": 2476468500,
   "status": "passed"
 });
 formatter.match({
   "location": "keyBoardLayout.i_create_a_new_keyboard_layout()"
 });
 formatter.result({
-  "duration": 130387300,
+  "duration": 417075300,
   "status": "passed"
 });
 formatter.match({
@@ -293,7 +325,8 @@ formatter.match({
   "location": "keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(String,String,String\u003e\u003e)"
 });
 formatter.result({
-  "duration": 16524157300,
-  "status": "passed"
+  "duration": 124779876100,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat bindings.keyBoardLayout.assignRandomPosFunctions(keyBoardLayout.java:418)\r\n\tat bindings.keyBoardLayout.the_keyboard_uses_colour_scheme_and_font_scheme(keyBoardLayout.java:259)\r\n\tat ✽.Then the keyboard uses colour scheme TCx Elevate FO colour scheme and font scheme Arial(keyBoardLayout.feature:11)\r\n",
+  "status": "failed"
 });
 });

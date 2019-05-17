@@ -25,11 +25,11 @@ Examples:
 #| Touch image presets (4x5)| TCx Elevate FO colour scheme  | Open Sans     |
 #| Touch image presets (4x5)| storeMate FO colour scheme    | Arial         |
 #| Touch image presets (4x5)| storeMate FO colour scheme    | Open Sans     |
-| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Arial         |
+#| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Arial         |
 #| Touch image presets (5x6)| TCx Elevate FO colour scheme  | Open Sans     |
 #| Touch image presets (5x6)| storeMate FO colour scheme    | Arial         |
 #| Touch image presets (5x6)| storeMate FO colour scheme    | Open Sans     |
-#| Touch image presets (6x7)| TCx Elevate FO colour scheme  | Arial         |
+| Touch image presets (6x7)| TCx Elevate FO colour scheme  | Arial         |
 #| Touch image presets (6x7)| TCx Elevate FO colour scheme  | Open Sans     |
 #| Touch image presets (6x7)| storeMate FO colour scheme    | Arial         |
 #| Touch image presets (6x7)| storeMate FO colour scheme    | Open Sans     |
