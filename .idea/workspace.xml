@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="af2576fc-4e8c-4a8c-a102-0bc3447b50e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-html-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/myRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bindings/initializeDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bindings/initializeDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bindings/keyBoardLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bindings/keyBoardLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/keyBoardLayout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/keyBoardLayout.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,17 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="1088">
+              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -43,20 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1247">
-              <caret line="315" column="73" selection-start-line="315" selection-start-column="72" selection-end-line="315" selection-end-column="73" />
+            <state relative-caret-position="12988">
+              <caret line="781" column="19" selection-start-line="781" selection-start-column="19" selection-end-line="781" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="357">
               <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="27" column="49" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,6 +109,7 @@
       <find>Thread</find>
       <find>&quot;//*[</find>
       <find>//*</find>
+      <find>ean</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,11 +165,11 @@
         <option value="$PROJECT_DIR$/src/test/java/bindings/test3.java" />
         <option value="$PROJECT_DIR$/src/test/resources/test3.feature" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/runners/myRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature" />
         <option value="$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runners/myRunner.java" />
       </list>
     </option>
   </component>
@@ -214,12 +220,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTest" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-html-report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CucumberTest" type="b2602c69:ProjectViewProjectNode" />
@@ -259,8 +278,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,34 +428,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="myRunner - 2019.05.17 at 13h 54m 59s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 02m 05s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 08m 58s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 15m 31s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 22m 46s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 24m 58s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 27m 20s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myRunner - 2019.05.17 at 14h 28m 53s.xml">
-      <configuration name="myRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="myRunner - 2019.05.17 at 14h 33m 10s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="myRunner - 2019.05.17 at 15h 25m 43s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 13h 06m 59s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 14h 06m 19s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 14h 47m 44s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 14h 55m 51s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 15h 16m 46s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 15h 20m 34s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 15h 26m 13s.xml">
+      <configuration name="myRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="myRunner - 2019.05.23 at 15h 27m 19s.xml">
       <configuration name="myRunner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -453,14 +470,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49867725" visible="true" weight="0.28084832" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49867725" visible="true" weight="0.2962725" />
       <window_info id="Structure" order="6" sideWeight="0.50132275" side_tool="true" weight="0.27706185" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.44730076" side_tool="true" weight="0.49583334" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.527635" weight="0.3263889" />
@@ -560,20 +576,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXDispatchEvents.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXInvocationProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1249">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXDispatchEvents.class" />
+    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXInvocationProxy.class" />
     <entry file="jar://$USER_HOME$/Downloads/AutoItX4Java.jar!/autoitx4java/AutoItX.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14671">
@@ -581,13 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/jacob-1.19/jacob.jar!/com/jacob/activeX/ActiveXComponent.class" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/Test2.feature" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.sql/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,15 +658,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="1088">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12988">
+          <caret line="781" column="19" selection-start-line="781" selection-start-column="19" selection-end-line="781" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -677,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bindings/InstallApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="357">
           <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -685,10 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runners/myRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/initializeDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="289">
+          <caret line="27" column="49" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -697,18 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/keyBoardLayout.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bindings/keyBoardLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1247">
-          <caret line="315" column="73" selection-start-line="315" selection-start-column="72" selection-end-line="315" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>

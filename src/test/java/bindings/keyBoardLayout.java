@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -31,9 +32,14 @@ public class keyBoardLayout {
     @Given("^I log in on the central storeMate Online environment$")
     public void i_log_in_on_the_central_storeMate_Online_environment(List<List<String>> arg1)  {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+
+        chromeOptions.addArguments("--headless");
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
-        driver.navigate().to("http://10.186.71.225/WebApp/WEBAPP/Home/Home/Logon?returnUrl=/WebApp/WEBAPP/Home/Home/Menu");
+        driver.navigate().to("http://10.186.71.222/WebApp/WEBAPP/Home/Home/Logon?returnUrl=/WebApp/WEBAPP/Home/Home/Menu");
         driver.findElement(By.name("UserName")).sendKeys(arg1.get(1).get(0));
         driver.findElement(By.name("Password")).sendKeys(arg1.get(1).get(1));
         driver.findElement(By.id("SubmitBtn")).click();
@@ -49,9 +55,9 @@ public class keyBoardLayout {
         try{
             explicitWait("id", "ApplicationSelectMenuItem_9");
 //          Use for 10.186.71.225
-            driver.findElement(By.id("ApplicationSelectMenuItem_9")).click();
+//            driver.findElement(By.id("ApplicationSelectMenuItem_9")).click();
 //          Use for 10.186.71.222
-//          driver.findElement(By.id("ApplicationSelectMenuItem_8")).click();
+          driver.findElement(By.id("ApplicationSelectMenuItem_8")).click();
 
 
 
@@ -517,9 +523,10 @@ public class keyBoardLayout {
 
     public void save(){
 //       Select "Save" button
-        explicitWait("id", "SaveBtn");
-        driver.findElement(By.id("SaveBtn")).click();
+        explicitWait("id", "saveButton");
+        driver.findElement(By.id("saveButton")).click();
     }
+
 
 
     public void implicitWait(){
@@ -603,13 +610,13 @@ public class keyBoardLayout {
                         WebElement selectedParameter = parameters.get(parameter.nextInt(parameters.size()));
                         selectedParameter.click();
                     }
-                    else if(posFunctionText.equals("Scale item lookup")){
+                    else if(posFunctionText.equals("Scale item lookup") || posFunctionText.equals("Item lookup by category")){
                          implicitWait();
-                         driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div[2]/div[2]/div/div/div/span/div/div[2]/input")).sendKeys("1");
+                         driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div[2]/div[2]/div/div/div/span/div/div[2]/input")).sendKeys("TXT");
                         }
-                    else if (posFunctionText.equals("Item lookup by category") || posFunctionText.equals("EAN preset")){
+                    else if (posFunctionText.equals("EAN preset")){
                         implicitWait();
-                        driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div[2]/div[2]/div/div/div/span/div/div[2]/input")).sendKeys("0100");
+                        driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div[2]/div[2]/div/div/div/span/div/div[2]/input")).sendKeys("1");
                     }
 //                    else if(posFunctionText.equals("Item lookup by category")){
 //                        implicitWait();
@@ -651,7 +658,6 @@ public class keyBoardLayout {
 
     public void createNewKeyboard(List<List<String>> arg3) {
         try {
-
 //          Switch to the iframe within the pop-up
             explicitWait("name", "dialogFrameposKeyboardDetails");
             driver.switchTo().frame("dialogFrameposKeyboardDetails");
@@ -664,54 +670,56 @@ public class keyBoardLayout {
             driver.switchTo().activeElement();
 //          Select the keyboard type defined in the scenario
             implicitWait();
-            driver.findElement(By.xpath("//*[contains(text(),'"+ arg3.get(0).get(0) + "')]")).click();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            Assert.fail();
-        }
+            driver.findElement(By.xpath("//*[contains(text(),'" + arg3.get(0).get(0) + "')]")).click();
 
 
-        if (arg3.get(0).get(0).contains("Touch") || arg3.get(0).get(0).equals("PC Keyboard")) {
+
+            if (arg3.get(0).get(0).contains("Touch") || arg3.get(0).get(0).equals("PC Keyboard")) {
 //          Click on the arrow symbol of the "Colour scheme" dropdown menu
-            explicitWait("xpath", "/html/body/div[1]/div/form/div/div[2]/div[1]/div[2]/div/div[1]/input");
-            driver.findElement(By.xpath("/html/body/div[1]/div/form/div/div[2]/div[1]/div[2]/div/div[1]/input")).click();
+                explicitWait("xpath", "/html/body/div[1]/div/form/div/div[2]/div[1]/div[2]/div/div[1]/input");
+                driver.findElement(By.xpath("/html/body/div[1]/div/form/div/div[2]/div[1]/div[2]/div/div[1]/input")).click();
 //          Select the colour scheme defined in the scenario
-                if ((arg3.get(0).get(1)).equals("TCx Elevate FO colour scheme")) {
-                    driver.findElement(By.cssSelector("div:nth-child(3) > div > div:nth-child(2)")).click();
-                } else if ((arg3.get(0).get(1)).equals("storeMate FO colour scheme")) {
-                    driver.findElement(By.cssSelector("div:nth-child(3) > div > div:nth-child(3)")).click();
+                switch (arg3.get(0).get(1)) {
+                    case "TCx Elevate FO colour scheme": {
+                        driver.findElement(By.cssSelector("div:nth-child(3) > div > div:nth-child(2)")).click();
+                        break;}
+                    case "storeMate FO colour scheme": {
+                        driver.findElement(By.cssSelector("div:nth-child(3) > div > div:nth-child(3)")).click();
+                        break;}
+                    default:
                 }
-            }
 
-
-        try {
 //          Click on the arrow symbol of the "Font scheme" dropdown menu
-            explicitWait("xpath", "/html/body/div[1]/div/form/div/div[2]/div[2]/div[2]/div/div[1]/input");
-            driver.findElement(By.xpath("/html/body/div[1]/div/form/div/div[2]/div[2]/div[2]/div/div[1]/input")).click();
-            driver.switchTo().activeElement();
+                    explicitWait("xpath", "/html/body/div[1]/div/form/div/div[2]/div[2]/div[2]/div/div[1]/input");
+                    driver.findElement(By.xpath("/html/body/div[1]/div/form/div/div[2]/div[2]/div[2]/div/div[1]/input")).click();
+                    driver.switchTo().activeElement();
 //          Select the font scheme defined in the scenario
-            if ((arg3.get(0).get(2)).equals("Arial")) {
-                explicitWait("cssSelector", "div:nth-child(4) > div > div:nth-child(2)");
-                driver.findElement(By.cssSelector("div:nth-child(4) > div > div:nth-child(2)")).click();
-            } else if ((arg3.get(0).get(2)).equals("Open Sans")) {
-                explicitWait("cssSelector", "div:nth-child(4) > div > div:nth-child(3)");
-                driver.findElement(By.cssSelector("div:nth-child(4) > div > div:nth-child(3)")).click();
-            }
+                switch (arg3.get(0).get(2)) {
+                    case "Arial": {
+                        explicitWait("cssSelector", "div:nth-child(4) > div > div:nth-child(2)");
+                        driver.findElement(By.cssSelector("div:nth-child(4) > div > div:nth-child(2)")).click();
+                        break;}
+                    case "Open Sans": {
+                        explicitWait("cssSelector", "div:nth-child(4) > div > div:nth-child(3)");
+                        driver.findElement(By.cssSelector("div:nth-child(4) > div > div:nth-child(3)")).click();
+                        break;}
+                    default:
+                    }
+                }
 
-//          Leave the iframe
+//      Leave the iframe
             driver.switchTo().parentFrame();
-//          Click on the "ok" button
+//      Click on the "ok" button
             explicitWait("xpath", "//*[@id=\"posKeyboardDetails\"]/div[2]/div[2]/span[1]");
             driver.findElement(By.xpath("//*[@id=\"posKeyboardDetails\"]/div[2]/div[2]/span[1]")).click();
 
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
             Assert.fail();
         }
+
+
+
     }
 
 
@@ -818,7 +826,8 @@ public class keyBoardLayout {
 
 
 //          Click the "save" button
-            save();
+            explicitWait("id", "SaveBtn");
+            driver.findElement(By.id("SaveBtn")).click();
         }
         catch (Exception e){
             e.printStackTrace();
